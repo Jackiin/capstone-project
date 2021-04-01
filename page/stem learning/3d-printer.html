@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 4.0.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- helper script -->
+    <script src="/js/helper.js"></script>
+
+    <link href="/main.css" rel="stylesheet">
+    <link href="/css/lightbox.css" rel="stylesheet">
+    <link href="/css/lightbox.animate.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        
+        <header id="header"></header>
+        <script>
+            loadHTML('#header', '/html/header.html');
+        </script>
+        
+        <div id="breadcrumb"></div>
+        <script>
+            loadHTML('#breadcrumb', '/html/breadcrumb.html');
+        </script>
+
+        <main>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/EfiqdP7t2jo" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> -->
+            <div>
+
+            </div>
+            <div class="gallery-container section-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col gallery section-description wow fadeIn">
+                            <h2>Videos</h2>
+                            <div class="divider-1 wow fadeInUp"><span></span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <!-- First row of images -->
+                            <div class="row">
+                                <div class="col-md-4 gallery-box wow fadeInDown">
+                                    <div data-toggle="modal" data-target="#myModal">
+                                        <img src="assets/img/gallery/1.jpg" alt="Image 1" data-target="#myCarousel"
+                                            data-slide-to="0">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 gallery-box wow fadeInUp">
+                                    <div data-toggle="modal" data-target="#myModal">
+                                        <img src="assets/img/gallery/video-1.jpg" alt="Video 1"
+                                            data-target="#myCarousel" data-slide-to="1">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 gallery-box wow fadeInDown">
+                                    <div data-toggle="modal" data-target="#myModal">
+                                        <img src="assets/img/gallery/2.jpg" alt="Image 2" data-target="#myCarousel"
+                                            data-slide-to="2">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second row of images -->
+                            <div class="row">
+                                <div class="col-md-4 gallery-box wow fadeInUp">
+                                    <div data-toggle="modal" data-target="#myModal">
+                                        <img src="assets/img/gallery/video-2.jpg" alt="Video 2"
+                                            data-target="#myCarousel" data-slide-to="3">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 gallery-box wow fadeInDown">
+                                    <div data-toggle="modal" data-target="#myModal">
+                                        <img src="assets/img/gallery/3.jpg" alt="Image 3" data-target="#myCarousel"
+                                            data-slide-to="4">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 gallery-box wow fadeInUp">
+                                    <div data-toggle="modal" data-target="#myModal">
+                                        <img src="assets/img/gallery/4.jpg" alt="Image 4" data-target="#myCarousel"
+                                            data-slide-to="5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer"></footer>
+        <script>
+            loadHTML('#footer','/html/footer.html');
+        </script>
+        
+    </div>
+</body>
+
+</html>

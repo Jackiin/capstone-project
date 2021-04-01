@@ -1,0 +1,51 @@
+<!-- popup -->
+<div class="modal fade" id="social-share-popup" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Share</h5>
+            </div>
+            <div class="modal-body row">
+                <div class="col-6">
+                    <div id="qrcode"></div>
+                </div>
+                <div class="sitelink-wrapper col-6">
+                    <input class="sitelink-content form-control" value="https://stem-portal.herokuapp.com">
+                    <button class="copy btn btn-warning btn-block my-2">
+                        <i class="fal fa-clipboard"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- https://davidshimjs.github.io/qrcodejs/ -->
+    <script src="/js/qrcode.min.js"></script>
+    <script>
+        const qrcode = new QRCode(document.querySelector("#qrcode"), {
+            text: "https://stem-portal.herokuapp.com",
+            width: 128,
+            height: 128,
+            correctLevel: QRCode.CorrectLevel.H
+        });
+        
+        (function() {
+            // copy to clipboard
+            $(".copy").click((e) => {
+                // let link = $(e.target).parent().find(".link-content").html();
+                $(".sitelink-content").focus();
+                $(".sitelink-content").select();
+                try {
+                    let succeed = document.execCommand('copy');
+                } catch(err) {
+                    console.error('Unable to copy');
+                }
+
+                $(".sitelink-wrapper").append(`<span class="copied m-0">Copied</span>`);
+            });
+
+            $("#social-share-popup").on('hidden.bs.modal', (e) => {
+                $(".sitelink-wrapper").children().last().remove(".copied");
+            })
+        }());
+    </script>
+</div>

@@ -1,0 +1,33 @@
+<!-- breadcrumb -->
+<nav aria-label="breadcrumb" class="position-relative bg-light">
+    <ul class="breadcrumb m-0 px-10p border border-left-0 border-right-0 border-dark text-uppercase noiseTexture"></ul>
+</nav>
+
+<script>
+    $.getScript("/js/jquery.route.js", () => {
+        $(".breadcrumb").getRoute({
+            "jsonUrl": "/sitemap.json",
+            "classAppendToChild": "breadcrumb-item"
+        });
+    })
+</script>
+
+<style>
+    .breadcrumb-item {
+        padding-left: 0 !important;
+    }
+
+    .breadcrumb-item>a {
+        color: #666;
+    }
+
+    .breadcrumb-item>a:hover {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .breadcrumb-item::before {
+        padding-left: .5rem;
+    }
+</style>
+

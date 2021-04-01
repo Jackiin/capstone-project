@@ -1,0 +1,71 @@
+{
+    "url": ["/","/index.html"],
+    "name": "home",
+    "sub": [
+        {
+            "url": "",
+            "name": "Learn STEM",
+            "sub": [
+                {
+                    "url": ["/page/stem%20learning/micro-controller.html"],
+                    "name": "microcontroller"
+                },
+                {
+                    "url": ["/page/stem%20learning/3d-printer.html"],
+                    "name": "3d printer"
+                },
+                {
+                    "url": ["/page/stem%20learning/virtual-reality.html"],
+                    "name": "virtual reality"
+                },
+                {
+                    "url": ["/page/stem%20learning/lazer-machine.html"],
+                    "name": "lazer machine"
+                }
+            ]
+        },
+        {
+            "url": ["/page/tutorial/index.html"],
+            "name": "Tutorial of making this site",
+            "sub": [
+                {
+                    "url": "",
+                    "name": "chapter 1",
+                    "sub": [
+                        { "url": ["/page/tutorial/chapter1/lesson.html"], "name": "lesson" }
+                    ]
+                },
+                {
+                    "url": "",
+                    "name": "chapter 2",
+                    "sub": [
+                        { "url": ["/page/tutorial/chapter2/lesson.html","/page/tutorial/chapter2/lesson_cn.html"],
+                          "name": "lesson" }
+                    ]
+                },
+                {
+                    "url": "",
+                    "name": "chapter 3",
+                    "sub": [
+                        { "url": ["/page/tutorial/chapter3/lesson.html"], "name": "lesson" }
+                    ]
+                },
+                {
+                    "url": "",
+                    "name": "chapter 4",
+                    "sub": [
+                        { "url": ["/page/tutorial/chapter4/lesson.html"], "name": "lesson" }
+                    ]
+                },
+                {
+                    "url": "",
+                    "name": "chapter 5"
+                }
+            ]
+        },
+        {
+            "url": ["/page/contact.html"],
+            "name": "Contact"
+        }
+    ]
+}
